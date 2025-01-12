@@ -7,7 +7,7 @@ import Form from '../Components/Form'
 
 const Contact = () => {
   return (
-    <div className='max-md:px-5 px-20 h-fit bg-black mt-20' id ='contact'>
+    <div className='max-md:px-5  px-20 h-fit bg-black mt-20' id ='contact'>
       <h1 className='text-center text-green-500 text-[45px] font-bold animate-pulse'>Contact </h1>
       
     <div className='flex  max-md:flex-col gap-10 '>

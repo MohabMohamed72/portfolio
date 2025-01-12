@@ -4,7 +4,7 @@ import SocialMedia from '../Components/SocialMedia'
 
 const Home = () => {
   return (
-    <div id='home' className='px-20  transition-all duration-700'>
+    <div id='home' className='px-20 max-md:px-5 transition-all duration-700'>
       <div className='flex justify-between pt-36 max-md:pt-10 max-md:flex-col max-md:gap-20 items-center '>
         <div>
           <h1 className='text-white text-[25px] font-bold'>Hello It's Me</h1>

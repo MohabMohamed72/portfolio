@@ -14,7 +14,7 @@ import { SiRedux } from "react-icons/si";
 
 const About = () => {
   return (
-    <div id='about' className=' transition-all duration-700 px-20 w-full mt-[30px]'>
+    <div id='about' className=' transition-all duration-700 px-20 max-md:px-5 w-full mt-[30px]'>
       <div className='w-full ml-auto mr-auto'>
         <h1 className='text-white  text-[45px] font-bold pt-10 text-center '>About <span className='text-green-500  animate-pulse'>Me</span></h1>
       </div>
