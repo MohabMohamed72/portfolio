@@ -61,13 +61,13 @@ const Navbar = () => {
                 <div className={`${sidebar? `w-1/2`:`w-0 hidden`} absolute right-0 top-0  md:hidden transition-all duration-700 flex flex-col bg-[#000000c8] h-[117vh] z-[100] shadow-xl `} onClick={()=>{setsidebar(false)}}>
                 <IoIosCloseCircleOutline className='cursor-pointer text-green-500 mt-2 ml-1 mb-2 size-[20px] ' />
                 <ul className=''>
-                    <a href='#home'><li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>Home</li></a>
+                    <Link to='#home'  duration={500} smooth={true}><li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>Home</li></Link>
                     <hr />
-                   <a href='#about'> <li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>About</li></a>
+                   <Link to='#about' duration={500} smooth={true}> <li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>About</li></Link>
                     <hr />
-                    <a href='#portfolio'><li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>Portfolio</li></a>
+                    <Link to='#portfolio' duration={500} smooth={true}><li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>Portfolio</li></Link>
                     <hr />
-                    <a href="#contact"><li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>Contact</li></a>
+                    <Link to="#contact" duration={500} smooth={true}><li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{setsidebar(false)}}>Contact</li></Link>
                 </ul>
             </div>
         </div>
