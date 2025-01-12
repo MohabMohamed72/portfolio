@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
 
         <div className={``} >
-                <div className={`${sidebar? `w-1/2`:`w-0 hidden`} absolute right-0 top-0  md:hidden transition-all duration-700 flex flex-col bg-[#000000c8] h-[117vh] z-[100] shadow-xl `} onClick={()=>{dispatch(SidebarNotVisable())}}>
+                <div className={`${sidebar? `w-1/2`:`w-0 hidden`} absolute right-0 top-0  md:hidden transition-all duration-700 flex flex-col bg-[#000000c8] h-[480vh] z-[100] shadow-xl `} onClick={()=>{dispatch(SidebarNotVisable())}}>
                 <IoIosCloseCircleOutline className='cursor-pointer text-green-500 mt-2 ml-1 mb-2 size-[20px] ' />
                 <ul className=''>
                     <Link to='#home'  duration={500} smooth={true}><li className='text-green-500 font-bold text-[20px] p-2 hover:bg-green-400 cursor-pointer transition-all duration-700 ' onClick={()=>{dispatch(SidebarNotVisable())}}>Home</li></Link>

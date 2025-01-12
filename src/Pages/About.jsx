@@ -27,7 +27,7 @@ const About = () => {
             </div>
             <div className='flex  gap-2'>
               <FaDotCircle className='text-green-500 text-[20px] mt-1'/>
-              <p className='w-full'>Worked as Instructor of Scratch, C programming , Arduino, AVR and AI ,Machine Learning and Computer Vision For 1 Year </p>
+              <p className='w-full'>Worked as Instructor of Scratch, C programming, Arduino, AVR, AI, Machine Learning and Computer Vision For 1 Year </p>
             </div>
             <div className='flex  gap-2'>
               <FaDotCircle className='text-green-500 text-[20px] mt-1'/>
@@ -62,22 +62,6 @@ const About = () => {
                 <FaGithub className='text-white size-[30px]'/>
                 <p className='text-white'>Git</p>
               </div>
-              <div className='flex flex-col items-center'>
-                <FaPython className='text-yellow-300 size-[30px]'/>
-                <p className='text-white'>Python</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <GiArtificialIntelligence className='text-white size-[30px]'/>
-                <p className='text-white'>Machine <br /> Learning</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <p className='text-blue-700 text-[20px] font-[900]'>C</p>
-                <p className='text-white '>C Programming</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <GiTeacher className='text-green-500 size-[30px]'/>
-                <p className='text-white'>Teaching</p>
-              </div>
               <div className='flex flex-col items-center gap-1'>
                 <RiTailwindCssFill className='text-blue-400 size-[30px]'/>
                 <p className='text-white'>Tailwind</p>
@@ -85,6 +69,22 @@ const About = () => {
               <div className='flex flex-col items-center gap-1'>
                 <SiRedux className='text-purple-700 size-[30px]'/>
                 <p className='text-white'>Redux</p>
+              </div>
+              <div className='flex flex-col items-center'>
+                <FaPython className='text-yellow-300 size-[30px]'/>
+                <p className='text-white'>Python</p>
+              </div>
+              <div className='flex flex-col items-center gap-1'>
+                <GiTeacher className='text-green-500 size-[30px]'/>
+                <p className='text-white'>Teaching</p>
+              </div>
+              <div className='flex flex-col items-center gap-1'>
+                <p className='text-blue-700 text-[20px] font-[900]'>C</p>
+                <p className='text-white '>C Programming</p>
+              </div>
+              <div className='flex flex-col items-center gap-1'>
+                <GiArtificialIntelligence className='text-white size-[30px]'/>
+                <p className='text-white'>Machine Learning</p>
               </div>
             </div>
           </div>
