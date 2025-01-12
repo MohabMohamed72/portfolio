@@ -13,7 +13,7 @@ const Navbar = () => {
     const [sidebar , setsidebar] = useState(false)
   return (
 
-        <nav className="bg-[#000000c8]  border-gray-200 px-20 ">
+        <nav className="bg-[#000000c8]  border-gray-200 px-20 max-md:px-5 ">
         <div className=" flex flex-wrap items-center justify-between mx-auto py-4">
 
             <Link to='#home' smooth={true} duration={500} className="flex items-center space-x-3 rtl:space-x-reverse transition-all duration-700">
