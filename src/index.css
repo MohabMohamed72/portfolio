@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-img{
+    animation-name: Rotating;
+    animation-duration: 20s;
+    /* animation-delay: 3s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.up-and-down{
+    animation-name: UpDown;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    /* animation-timing-function:  */
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes Rotating {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        
+        transform: rotate(1turn);
+    }
+
+}
+@keyframes UpDown {
+    from{
+        transform: translateY(4px) 
+    }
+    to{
+        
+        transform: translateY(0px) 
+        
+    }
+
+}
