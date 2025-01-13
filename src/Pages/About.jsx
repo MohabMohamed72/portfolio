@@ -23,13 +23,13 @@ const About = () => {
   const [SkillsActive ,setSkillsActive] = useState(false)
 
   return (
-    <div id='about' className=' transition-all duration-700 px-20 max-md:px-5 w-full mt-[30px] '>
+    <div id='about' className=' transition-all duration-700  max-md:px-5 w-full mt-[30px] '>
 
       <div className='w-fit ml-auto mr-auto relative  z-[100] '>
         <h1 className='text-white  text-[45px] font-bold p-2 msx-sm:pt-3 text-center z-[100]'>About <span className='text-green-500 white animate-pulse'>Me</span></h1>
       </div>
 
-      <div className='flex max-md:flex-col justify-between w-full mt-5 items-center' >
+      <div className='flex max-md:flex-col xl:gap-1 justify-between w-full mt-5 items-center' >
 
         <div className='w-full  flex flex-col items-center gap-3 myfont2'>
           <button className={`${ExperienceActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(true) ; setEducationActive(false); setSkillsActive(false);}}>Experience</button>
