@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaDotCircle } from "react-icons/fa";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { FaCss3 } from "react-icons/fa";
@@ -11,84 +11,126 @@ import { FaPython } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiRedux } from "react-icons/si";
+import { MdCastForEducation } from "react-icons/md";
+import { FaMicrochip } from "react-icons/fa";
+import { MdOutlineWebAsset } from "react-icons/md";
+import { FaUniversity } from "react-icons/fa";
 
 const About = () => {
+
+  const [ExperienceActive ,setExperienceActive] = useState(true)
+  const [EducationActive ,setEducationActive] = useState(false)
+  const [SkillsActive ,setSkillsActive] = useState(false)
+
   return (
     <div id='about' className=' transition-all duration-700 px-20 max-md:px-5 w-full mt-[30px] '>
-      <div className='w-full ml-auto mr-auto'>
-        <h1 className='text-white  text-[45px] font-bold pt-10 msx-sm:pt-3 text-center '>About <span className='text-green-500  animate-pulse'>Me</span></h1>
+
+      <div className='w-fit ml-auto mr-auto relative  z-[100] '>
+        <h1 className='text-white  text-[45px] font-bold p-2 msx-sm:pt-3 text-center z-[100]'>About <span className='text-green-500 white animate-pulse'>Me</span></h1>
       </div>
 
-      <div className='max-md:mt-10 flex w-full max-md:flex-wrap justify-between xl:mt-40 max-md:flex-col max-md:gap-10 md:gap-20 '>
-          <div className='text-white  gap-5 flex flex-col text-justify'>
-            <div className='flex gap-2 '>
-              <FaDotCircle className='text-green-500 text-[20px] mt-1'/>
-              <p className='w-full'>Graduated from the Faculty of Engineering of the Mechatronics Department </p>
+      <div className='flex max-md:flex-col justify-between w-full mt-5 items-center' >
+
+        <div className='w-full  flex flex-col items-center gap-3 myfont2'>
+          <button className={`${ExperienceActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(true) ; setEducationActive(false); setSkillsActive(false);}}>Experience</button>
+          <button className={`${EducationActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(false); setEducationActive(true) ; setSkillsActive(false);}}>Education</button>
+          <button className={`${SkillsActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(false); setEducationActive(false); setSkillsActive(true);}}>Skills</button>
+        </div>
+
+        <div className='w-full mt-10 transition-all duration-700 '>
+          <div className='w-[90%]  h-fit ml-auto mr-auto text-white myfont2  transition-all duration-700'>
+            {
+              ExperienceActive? <div className='flex flex-wrap transition-all duration-700 gap-5 max-sm:flex-col '>
+                <div className='bg-gray-800 p-3 w-[45%] text-justify max-sm:w-full'>
+                    <div className='border-2 border-green-500 w-fit ml-auto mr-auto rounded-full p-2 mb-3'>
+                      <GiTeacher className='text-green-500 size-5' />
+                    </div>
+                    <div>
+                      <FaDotCircle className='inline-block mr-2 mb-1 text-green-500' />
+                      <h1 className='inline'>Worked As Instructor Of Arduino, C Programming, Python, Machine Learning, Computer Vision, AI, Scratch For 1 Year</h1>
+                    </div>
+                  </div>
+                  <div className='bg-gray-800 p-3 w-[45%] text-justify max-sm:w-full'>
+                    <div className='border-2 border-green-500 w-fit ml-auto mr-auto rounded-full p-2 mb-3'>
+                      <MdOutlineWebAsset className='text-green-500 size-5' />
+                    </div>
+                    <div>
+                      <FaDotCircle className='inline-block mr-2 mb-1 text-green-500' />
+                      <h1 className='inline'>Experience In Html, Css, JavaScript, React, TailWind, Git, Redux</h1>
+                    </div>
+                  </div>
+                  <div className='bg-gray-800 p-3 w-[45%] text-justify max-sm:w-full'>
+                    <div className='border-2 border-green-500 w-fit ml-auto mr-auto rounded-full p-2 mb-3'>
+                      <MdCastForEducation className='text-green-500 size-5' />
+                    </div>
+                    <div>
+                      <FaDotCircle className='inline-block mr-2 mb-1 text-green-500' />
+                      <h1 className='inline'>NTI Training 4 Months</h1>
+                    </div>
+                  </div>
+                  <div className='bg-gray-800 p-3 w-[45%] text-justify max-sm:w-full '>
+                    <div className='border-2 border-green-500 w-fit ml-auto mr-auto rounded-full p-2 mb-3'>
+                      <FaMicrochip className='text-green-500 size-5' />
+                    </div>
+                    <div>
+                      <FaDotCircle className='inline-block mr-2 mb-1 text-green-500' />
+                      <h1 className='inline'>Embedded Systems Diploma</h1>
+                    </div>
+                  </div>
+              </div>:EducationActive? <div className='flex justify-center'>
+
+              <div className='bg-gray-800 p-3 w-[45%] text-justify max-sm:w-full'>
+                    <div className='border-2 border-green-500 w-fit ml-auto mr-auto rounded-full p-2 mb-3'>
+                      <FaUniversity className='text-green-500 size-5' />
+                    </div>
+                    <div>
+                      <FaDotCircle className='inline-block mr-2 mb-1 text-green-500 ' />
+                      <h1 className='inline'>Graduated from the Faculty of Engineering of the Mechatronics Department</h1>
+                    </div>
+                  </div>
+                 
+              </div>:SkillsActive? <div className='w-full flex justify-center'>
+              <div className='mt-5 auto flex gap-3 flex-wrap justify-center'>
+                <div className='w-[20%] h-[60px] p-2 bg-gray-900 '>
+                  <FaHtml5 className=' size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='HTML'/>
+                </div>
+                <div className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <FaCss3 className=' size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='CSS'/>
+                </div>
+                <div className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <IoLogoJavascript className=' size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='JavaScript'/>
+                </div>
+                <div className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <FaReact className='size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='React'/>
+                </div>
+                <div  className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <FaGithub className='text-white size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='Github'/>
+                </div>
+                <div className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <RiTailwindCssFill className=' size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='Tailwind'/>
+                </div>
+                <div className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <SiRedux className=' size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='Redux'/>
+                </div>
+                <div  className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <FaPython className=' size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='Python'/>
+                </div>
+                <div  className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <GiTeacher className=' size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='Teaching'/>
+                </div>
+                <div className='w-[20%] h-[60px] p-2 bg-gray-900' >
+                  <p className=' text-[30px] font-[900] w-fit ml-auto mr-auto hover:text-green-500' title='C Programming'>C</p>
+                </div>
+                <div  className='w-[20%] h-[60px] p-2 bg-gray-900'>
+                  <GiArtificialIntelligence className='text-white size-[30px] ml-auto mr-auto mt-2 hover:text-green-500' title='Machine Learning'/>
+                </div>
             </div>
-            <div className='flex  gap-2'>
-              <FaDotCircle className='text-green-500 text-[20px] mt-1'/>
-              <p className='w-full'>Worked as Instructor of Scratch, C programming, Arduino, AVR, AI, Machine Learning and Computer Vision For 1 Year </p>
-            </div>
-            <div className='flex  gap-2'>
-              <FaDotCircle className='text-green-500 text-[20px] mt-1'/>
-              <p className='w-full'>NTI Training 4 Months In Embedded Systems </p>
-            </div>
-            <div className='flex  gap-2'>
-              <FaDotCircle className='text-green-500 text-[20px] mt-1'/>
-              <p className='w-full'>I have strong experience in React, HTML, CSS, and JavaScript, which enables me to create dynamic and responsive web applications.</p>
-            </div>
+              </div>:null
+            }
           </div>
-          <div className='border-2 p-3 border-green-500 rounded-xl px-4'>
-            <h1 className='text-white text-center text-[20px] font-bold'>Skills</h1>
-            
-            <div className='mt-5 flex justify-center flex-wrap gap-7 w-auto h-auto  '>
-              <div className='flex flex-col items-center'>
-                <FaHtml5 className='text-orange-500 size-[30px]'/>
-                <p className='text-white'>HTML</p>
-              </div>
-              <div className='flex flex-col items-center'>
-                <FaCss3 className='text-blue-500 size-[30px]'/>
-                <p className='text-white'>CSS</p>
-              </div>
-              <div className='flex flex-col items-center'>
-                <IoLogoJavascript className='text-yellow-400 size-[30px]'/>
-                <p className='text-white'>Javascript</p>
-              </div>
-              <div className='flex flex-col items-center'>
-                <FaReact className='text-blue-400 size-[30px]'/>
-                <p className='text-white'>React</p>
-              </div>
-              <div className='flex flex-col items-center'>
-                <FaGithub className='text-white size-[30px]'/>
-                <p className='text-white'>Git</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <RiTailwindCssFill className='text-blue-400 size-[30px]'/>
-                <p className='text-white'>Tailwind</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <SiRedux className='text-purple-700 size-[30px]'/>
-                <p className='text-white'>Redux</p>
-              </div>
-              <div className='flex flex-col items-center'>
-                <FaPython className='text-yellow-300 size-[30px]'/>
-                <p className='text-white'>Python</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <GiTeacher className='text-green-500 size-[30px]'/>
-                <p className='text-white'>Teaching</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <p className='text-blue-700 text-[20px] font-[900]'>C</p>
-                <p className='text-white '>C Programming</p>
-              </div>
-              <div className='flex flex-col items-center gap-1'>
-                <GiArtificialIntelligence className='text-white size-[30px]'/>
-                <p className='text-white'>Machine Learning</p>
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
+    
       
     </div>
   )
