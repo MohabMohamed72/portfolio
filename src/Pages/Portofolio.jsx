@@ -7,6 +7,7 @@ const Portofolio = () => {
 
   const [Visable1 , setVisable1] =useState(false)
   const [Visable2 , setVisable2] =useState(false)
+  const [Visable3 , setVisable3] =useState(false)
   return (
     <div id='portfolio' className='mt-20 transition-all scroll-smooth duration-700  px-20 max-sm:px-5 pt-10'>
         <div className='w-full ml-auto mr-auto'>
@@ -31,9 +32,9 @@ const Portofolio = () => {
             </div>
           </div>
 
-          <div className='cursor-pointer relative rounded-md w-[400px] overflow-hidden max-sm:w-full' onMouseEnter={()=>{setVisable2(true)}} onMouseLeave={()=>{setVisable2(false)}} onClick={()=>{window.open('https://ampage.netlify.app/' , '_blank')}}>
+          <div className='cursor-pointer relative rounded-md w-[400px] overflow-hidden max-sm:w-full' onMouseEnter={()=>{setVisable3(true)}} onMouseLeave={()=>{setVisable3(false)}} onClick={()=>{window.open('https://ampage.netlify.app/' , '_blank')}}>
             <img src={img3} alt="" className='' />
-            <div className={`${Visable2? ` h-3/4 transition-all duration-700`:` h-0`}  absolute bg-[#7dc783da] w-full bottom-0  transition-all duration-700`}>
+            <div className={`${Visable3? ` h-3/4 transition-all duration-700`:` h-0`}  absolute bg-[#7dc783da] w-full bottom-0  transition-all duration-700`}>
               <h1 className='text-white font-bold px-5'>AmRobotics</h1>
               <p className='px-5 text-white text-[12px]'>First page using html and css</p>
             </div>
