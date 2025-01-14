@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import img from '../assets/Filmpire.png'
 import img2 from '../assets/Ecommerce.png'
 import img3 from '../assets/Am.png'
+import img4 from '../assets/kasper.png'
 
 const Portofolio = () => {
 
   const [Visable1 , setVisable1] =useState(false)
   const [Visable2 , setVisable2] =useState(false)
   const [Visable3 , setVisable3] =useState(false)
+  const [Visable4 , setVisable4] =useState(false)
   return (
     <div id='portfolio' className='mt-20 transition-all scroll-smooth duration-700  px-20 max-sm:px-5 pt-10'>
         <div className='w-full ml-auto mr-auto'>
@@ -37,6 +39,13 @@ const Portofolio = () => {
             <div className={`${Visable3? ` h-3/4 transition-all duration-700`:` h-0`}  absolute bg-[#7dc783da] w-full bottom-0  transition-all duration-700`}>
               <h1 className='text-white font-bold px-5'>AmRobotics</h1>
               <p className='px-5 text-white text-[12px]'>First page using html and css</p>
+            </div>
+          </div>
+          <div className='cursor-pointer relative rounded-md w-[400px] overflow-hidden max-sm:w-full' onMouseEnter={()=>{setVisable4(true)}} onMouseLeave={()=>{setVisable4(false)}} onClick={()=>{window.open(' https://kasperpage.netlify.app/' , '_blank')}}>
+            <img src={img4} alt="" className='' />
+            <div className={`${Visable4? ` h-3/4 transition-all duration-700`:` h-0`}  absolute bg-[#7dc783da] w-full bottom-0  transition-all duration-700`}>
+              <h1 className='text-white font-bold px-5'>Kasper</h1>
+              <p className='px-5 text-white text-[12px]'>Page Using html and Tailwind And Javascript</p>
             </div>
           </div>
 
