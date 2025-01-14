@@ -29,15 +29,15 @@ const About = () => {
         <h1 className='text-white  text-[45px] font-bold p-2 msx-sm:pt-3 text-center z-[100]'>About <span className='text-green-500 white animate-pulse'>Me</span></h1>
       </div>
 
-      <div className='flex max-md:flex-col xl:gap-1 justify-between w-full mt-5 items-center' >
+      <div className='grid grid-cols-2 max-md:grid-cols-1 max-md:gap-5  mt-20 ' >
 
         <div className='w-full  flex flex-col items-center gap-3 myfont2'>
-          <button className={`${ExperienceActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(true) ; setEducationActive(false); setSkillsActive(false);}}>Experience</button>
-          <button className={`${EducationActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(false); setEducationActive(true) ; setSkillsActive(false);}}>Education</button>
-          <button className={`${SkillsActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(false); setEducationActive(false); setSkillsActive(true);}}>Skills</button>
+          <button className={`${ExperienceActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-full sm:w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(true) ; setEducationActive(false); setSkillsActive(false);}}>Experience</button>
+          <button className={`${EducationActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-full  sm:w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(false); setEducationActive(true) ; setSkillsActive(false);}}>Education</button>
+          <button className={`${SkillsActive? `bg-green-500`:`bg-gray-800`} text-white rounded-md bg-gray-800 p-1 w-full     sm:w-[40%] text-[18px] transition-all duration-700`} onClick={()=>{setExperienceActive(false); setEducationActive(false); setSkillsActive(true);}}>Skills</button>
         </div>
 
-        <div className='w-full mt-10 transition-all duration-700 '>
+        <div className='w-full  transition-all duration-700 '>
           <div className='w-[90%]  h-fit ml-auto mr-auto text-white myfont2  transition-all duration-700'>
             {
               ExperienceActive? <div className='flex flex-wrap transition-all duration-700 gap-5 max-sm:flex-col '>

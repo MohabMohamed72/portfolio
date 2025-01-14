@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import img from '../assets/Filmpire.png'
 import img2 from '../assets/Ecommerce.png'
+import img3 from '../assets/Am.png'
 
 const Portofolio = () => {
 
@@ -29,6 +30,16 @@ const Portofolio = () => {
               <p className='px-5 text-white text-[12px]'> online clothing store, where style meets comfort! Explore our curated collection of trendy apparel for men, women, and children. From casual wear to formal attire, we offer a variety of options to suit every occasion</p>
             </div>
           </div>
+
+          <div className='cursor-pointer relative rounded-md w-[400px] overflow-hidden max-sm:w-full' onMouseEnter={()=>{setVisable2(true)}} onMouseLeave={()=>{setVisable2(false)}} onClick={()=>{window.open('https://ampage.netlify.app/' , '_blank')}}>
+            <img src={img3} alt="" className='' />
+            <div className={`${Visable2? ` h-3/4 transition-all duration-700`:` h-0`}  absolute bg-[#7dc783da] w-full bottom-0  transition-all duration-700`}>
+              <h1 className='text-white font-bold px-5'>AmRobotics</h1>
+              <p className='px-5 text-white text-[12px]'>First page using html and css</p>
+            </div>
+          </div>
+
+
         </div>
     </div>
 
