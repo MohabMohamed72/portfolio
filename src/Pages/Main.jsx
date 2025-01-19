@@ -1,4 +1,4 @@
-import React from 'react'
+zimport React from 'react'
 import Home from './Home'
 
 const Main = () => {

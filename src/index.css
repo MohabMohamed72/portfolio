@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
+
+
+
+@layer components{
+    .language-div-logo{
+        @apply w-[40%] h-[100px] p-2 bg-black flex flex-col items-center max-sm:w-[30%] max-sm:h-[70px]
+    }
+    .language-icon-logo{
+        @apply text-white size-[30px] ml-auto mr-auto mt-2  max-sm:size-[20px]
+    }
+    .language-text-logo{
+        @apply w-[120px] text-center max-sm:w-[100px] text-[15px]
+    }
+}
+
+.skills-logos-move{
+    animation-name: skillsmove;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.skills-logos-move2{
+    animation-name: skillsmove2;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
 .animation-img{
     animation-name: Rotating;
     animation-duration: 20s;
@@ -33,11 +66,18 @@
     animation-iteration-count: infinite;
     
 }
-/* 
+
 .moving-left{
     animation: movingLeft;
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.5,0.5,0.5, 1.1);
+    animation-iteration-count: infinite;
+   
+}
+.moving-up-down{
+    animation: movingupdown;
+    animation-duration: 3s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
    
 }
@@ -66,6 +106,8 @@
     }
 
 }
+
+
 @keyframes UpDown {
     from{
         transform: translateY(4px) 
@@ -77,7 +119,59 @@
     }
 
 }
+@keyframes movingupdown {
+    0%{
+        transform: translateY(0px) 
+    }
+    50%{
+        
+        transform: translateY(20px) 
+        
+    }
+    100%{
+        
+        transform: translateY(0px) 
+        
+    }
 
+}
+
+@keyframes skillsmove {
+    0%{
+        transform: translateX(-180px) 
+    }
+    50%{
+        
+        transform: translateX(180px) 
+        
+    }
+    100%{
+        
+        transform: translateX(-180px) 
+        
+    }
+
+}
+@keyframes skillsmove2 {
+    0%{
+        transform: translateX(-800px) 
+    }
+    50%{
+        
+        /* transform: translateX(800px)  */
+        
+    }
+    100%{
+        
+        transform: translateX(800px) 
+        
+    }
+
+}
+
+
+
+/*
 @keyframes movingLeft {
     from{
         transform: translateX(0px);
