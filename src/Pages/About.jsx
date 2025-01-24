@@ -90,9 +90,9 @@ const About = () => {
                     </div>
                   </div>
                  
-              </div>:SkillsActive? <div className='w-full flex justify-center overflow-hidden'>
+              </div>:SkillsActive? <div className=' flex justify-center w-full'>
 
-              <div className='mt-5 auto flex gap-3 skills-logos-move2'>
+              <div className='mt-1 auto flex gap-3 flex-wrap justify-center '>
                 <div className='language-div-logo'>
                   <FaHtml5 className='language-icon-logo text-orange-400' title='HTML'/>
                   <p className='language-text-logo '>Html</p>
@@ -137,51 +137,6 @@ const About = () => {
                   <GiArtificialIntelligence className='language-icon-logo' title='Machine Learning'/>
                   <p className='language-text-logo'>Machine Learning</p>
                 </div>
-                <div className='language-div-logo'>
-                  <FaHtml5 className='language-icon-logo text-orange-400' title='HTML'/>
-                  <p className='language-text-logo '>Html</p>
-                </div>
-                <div className='language-div-logo'>
-                  <FaCss3 className=' language-icon-logo text-blue-700' title='CSS'/>
-                  <p className='language-text-logo'>Css</p>
-                </div>
-                <div className='language-div-logo'>
-                  <IoLogoJavascript className=' language-icon-logo text-yellow-500' title='JavaScript'/>
-                  <p className='language-text-logo'>Javascript</p>
-                </div>
-                <div className='language-div-logo'>
-                  <FaReact className='language-icon-logo text-blue-300' title='React'/>
-                  <p className='language-text-logo'>React</p>
-                </div>
-                <div  className='language-div-logo'>
-                  <FaGithub className='language-icon-logo' title='Github'/>
-                  <p className='language-text-logo'>Github</p>
-                </div>
-                <div className='language-div-logo'>
-                  <RiTailwindCssFill className=' language-icon-logo text-blue-500' title='Tailwind'/>
-                  <p className='language-text-logo'>Tailwind</p>
-                </div>
-                <div className='language-div-logo'>
-                  <SiRedux className=' language-icon-logo text-purple-500' title='Redux'/>
-                  <p className='language-text-logo'>Redux</p>
-                </div>
-                <div  className='language-div-logo'>
-                  <FaPython className=' language-icon-logo text-yellow-500' title='Python'/>
-                  <p className='language-text-logo'>Python</p>
-                </div>
-                <div  className='language-div-logo'>
-                  <GiTeacher className=' language-icon-logo text-green-500' title='Teaching'/>
-                  <p className='language-text-logo'>Teaching</p>
-                </div>
-                <div className='language-div-logo' >
-                  <p className='language-icon-logo text-[25px] pl-2 font-[900] text-blue-800 max-sm:-translate-y-3' title='C Programming'>C</p>
-                  <p className='language-text-logo'>C Programming</p>
-                </div>
-                <div  className='language-div-logo'>
-                  <GiArtificialIntelligence className='language-icon-logo' title='Machine Learning'/>
-                  <p className='language-text-logo'>Machine Learning</p>
-                </div>
-                
             </div>
               </div>:null
             }

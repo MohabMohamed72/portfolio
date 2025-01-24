@@ -11,7 +11,7 @@
 
 @layer components{
     .language-div-logo{
-        @apply w-[40%] h-[100px] p-2 bg-black flex flex-col items-center max-sm:w-[30%] max-sm:h-[70px]
+        @apply md:w-[20%] md:h-[90px] p-2 bg-black flex flex-col gap-1 justify-center items-center max-md:w-[32%] max-sm:h-[100px]
     }
     .language-icon-logo{
         @apply text-white size-[30px] ml-auto mr-auto mt-2  max-sm:size-[20px]
