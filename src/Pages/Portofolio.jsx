@@ -51,7 +51,7 @@ const Portofolio = () => {
               <p className='px-5 text-white text-[12px]'>Page Using html and Tailwind And Javascript</p>
             </div>
           </div>
-          <div className='cursor-pointer relative rounded-md w-[400px] overflow-hidden max-sm:w-full' onMouseEnter={()=>{setVisable5(true)}} onMouseLeave={()=>{setVisable5(false)}} onClick={()=>{window.open(' https://kasperpage.netlify.app/' , '_blank')}}>
+          <div className='cursor-pointer relative rounded-md w-[400px] overflow-hidden max-sm:w-full' onMouseEnter={()=>{setVisable5(true)}} onMouseLeave={()=>{setVisable5(false)}} onClick={()=>{window.open('https://dasborad.netlify.app/' , '_blank')}}>
             <img src={img5} alt="" className='' />
             <div className={`${Visable5? ` h-3/4 transition-all duration-700`:` h-0`}  absolute bg-[#7dc783da] w-full bottom-0  transition-all duration-700`}>
               <h1 className='text-white font-bold px-5 text-[13px]'>Dashboard</h1>

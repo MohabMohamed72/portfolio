@@ -38,26 +38,26 @@ const Navbar = () => {
                     <li className='cursor-pointer' onClick={()=>{
                         setHomeActive(true);setAboutActive(false);setPortfolioActive(false);setContactActive(false);
                     }} >
-                        <Link to='#home' duration={500} smooth={true} className={`${HomeActive? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500 md:hover:text-green-500`} >Home</Link>
+                        <Link to='#home' duration={500} smooth={true} className={`${HomeActive ? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3   rounded md:bg-transparent  md:p-0  md:hover:text-green-500`} >Home</Link>
                     </li>
 
                     <li className='cursor-pointer'  onClick={()=>{
                         setHomeActive(false);setAboutActive(true);setPortfolioActive(false);setContactActive(false);
                     }}>
-                        <Link to='#about' duration={500} smooth={true} className={`${AboutActive? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0 `} >About</Link>
+                        <Link to='#about' duration={500} smooth={true} className={`${AboutActive ? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0 `} >About</Link>
                     </li>
 
                     <li className='cursor-pointer'  onClick={()=>{
                         setHomeActive(false);setAboutActive(false);setPortfolioActive(true);setContactActive(false);
                     }}>
                    
-                        <Link to='#portfolio' duration={500} smooth={true} className={`${PortfolioActive? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0`}>Portofolio</Link>
+                        <Link to='#portfolio' duration={500} smooth={true} className={`${PortfolioActive ? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0`}>Portofolio</Link>
                     </li>
                 
                     <li  className='cursor-pointer' onClick={()=>{
                         setHomeActive(false);setAboutActive(false);setPortfolioActive(false);setContactActive(true);
                     }}>
-                        <Link to='#contact' duration={500} smooth={true} className={`${ContactActive? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0`}>Contact</Link>
+                        <Link to='#contact' duration={500} smooth={true} className={`${ContactActive ? `text-green-500`:`text-white`} transition-all duration-700 block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0`}>Contact</Link>
                     </li>
                 </ul>
             </div>
