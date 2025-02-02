@@ -15,6 +15,7 @@ import { MdCastForEducation } from "react-icons/md";
 import { FaMicrochip } from "react-icons/fa";
 import { MdOutlineWebAsset } from "react-icons/md";
 import { FaUniversity } from "react-icons/fa";
+import { FaVuejs } from "react-icons/fa6";
 
 const About = () => {
 
@@ -104,6 +105,10 @@ const About = () => {
                 <div className='language-div-logo'>
                   <IoLogoJavascript className=' language-icon-logo text-yellow-500' title='JavaScript'/>
                   <p className='language-text-logo'>Javascript</p>
+                </div>
+                <div className='language-div-logo'>
+                  <FaVuejs className='language-icon-logo text-green-300' title='React'/>
+                  <p className='language-text-logo'>Vue Js</p>
                 </div>
                 <div className='language-div-logo'>
                   <FaReact className='language-icon-logo text-blue-300' title='React'/>
